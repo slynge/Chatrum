@@ -13,7 +13,7 @@ Her er chatrummet efter login for bruger niveau 3 (1 ud af 3)
 ![Chatrum for bruger niveau 3](images/user-level-3.png)
 
 Her er chatrummet efter login for bruger niveau 3 (2 ud af 3)
-![Chatrum for bruger niveau 3](images/user-level-3__.png)
+![Chatrum for bruger niveau 3](images/user-level-3_.png)
 
 Her er chatrummet efter login for bruger niveau 3 (3 ud af 3)
 ![Chatrum for bruger niveau 3](images/user-level-3__.png)
