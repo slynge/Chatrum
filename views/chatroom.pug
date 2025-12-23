@@ -1,0 +1,19 @@
+doctype html
+include includes/header
+include includes/chatroomScript
+body#chatroom
+    .account-info
+        p= `Logged in as: ${name} with user level ${userLevel}`
+    .log-out 
+        form(action = "/logout", method = "get") 
+            input(type = "submit", value = "Log out", class = "submit-btn")
+    .chatroom-wrapper
+        .wrapper#chats 
+
+
+        .wrapper#chat 
+
+        if isUserLevelThree 
+            .wrapper#accounts
+
+            .wrapper#account-info

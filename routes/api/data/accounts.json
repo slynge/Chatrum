@@ -1,0 +1,46 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "Martin",
+      "password": "test",
+      "dateOfCreation": "25-11-2025",
+      "userLevel": 3
+    },
+    {
+      "id": 2,
+      "username": "Mikkel",
+      "password": "test",
+      "dateOfCreation": "21-11-2025",
+      "userLevel": 1
+    },
+    {
+      "id": 3,
+      "username": "Maria",
+      "password": "test",
+      "dateOfCreation": "03-11-2025",
+      "userLevel": 2
+    },
+    {
+      "id": 4,
+      "username": "ole",
+      "password": "test",
+      "dateOfCreation": "01/12/2025",
+      "userLevel": 1
+    },
+    {
+      "id": 5,
+      "username": "Martin",
+      "password": "2",
+      "dateOfCreation": "10/12/2025",
+      "userLevel": 1
+    },
+    {
+      "id": 6,
+      "username": "t",
+      "password": "test",
+      "dateOfCreation": "15/12/2025",
+      "userLevel": 1
+    }
+  ]
+}

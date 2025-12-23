@@ -1,0 +1,47 @@
+include includes/header
+body#login-or-createAccount
+    mixin form(path, operation)
+        .wrapper
+            form(action = path, method = "POST") 
+                h1= operation
+                .input-box
+                    input(type = "text", name = "username", placeholder = "Username", required)
+                    i(class = "bx bxs-user")
+                .input-box
+                    input(type = "text", name = "password", placeholder = "Password")
+                    i(class = "bx bxs-lock-alt")
+                input(type = "submit", value = operation, class = "submit-btn")
+            if block 
+                block
+
+    mixin successfulAccountCreation()
+        .wrapper 
+            form(action = "/login", method = "GET")
+                h1 🎉Congratulations!
+                .action 
+                    p You have now created an account
+                .info
+                    i(class = "bx  bx-check")
+                    p#info-1 Your account is ready
+                .info
+                    i(class = "bx  bx-check")
+                    P#info-2 You can now log in
+                input(type = "submit", value = "Go to login", class = "submit-btn")
+
+
+    if createAccount
+        +form("/api/accounts", "Create account")
+
+    if login 
+        +form("/login", "Login")
+            .register-link
+                p Don't have an account? 
+                    a(href = '/login/createAccount') Register here!
+            .error
+                if error 
+                    p= error 
+
+    if successfulAccountCreation 
+        +successfulAccountCreation()
+
+

@@ -1,0 +1,113 @@
+{
+  "chats": [
+    {
+      "id": 1,
+      "name": "EncryptionChat",
+      "dateOfCreation": "08/12/2025",
+      "accountId": 1,
+      "messages": [
+        {
+          "id": 1,
+          "text": "Hej",
+          "dateOfCreation": "10/12/2025",
+          "accountId": 1,
+          "chatId": 1
+        },
+        {
+          "id": 1,
+          "text": "Send",
+          "dateOfCreation": "23/12/2025",
+          "accountId": 1,
+          "chatId": 1
+        },
+        {
+          "id": 2,
+          "text": "Tester",
+          "dateOfCreation": "23/12/2025",
+          "accountId": 1,
+          "chatId": 1
+        },
+        {
+          "id": 3,
+          "text": "Hejsa",
+          "dateOfCreation": "23/12/2025",
+          "accountId": 3,
+          "chatId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Projekt møde",
+      "dateOfCreation": "05/12/2025",
+      "accountId": 1,
+      "messages": [
+        {
+          "id": 2,
+          "text": "Skal vi mødes kl 14?",
+          "dateOfCreation": "06/12/2025",
+          "accountId": 1,
+          "chatId": 2
+        },
+        {
+          "id": 3,
+          "text": "Ja, det passer fint.",
+          "dateOfCreation": "06/12/2025",
+          "accountId": 1,
+          "chatId": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Weekend Planer",
+      "dateOfCreation": "07/12/2025",
+      "accountId": 2,
+      "messages": [
+        {
+          "id": 4,
+          "text": "Hvad laver du i weekenden?",
+          "dateOfCreation": "08/12/2025",
+          "accountId": 2,
+          "chatId": 3
+        },
+        {
+          "id": 5,
+          "text": "Tænker at tage i biografen. \nVil du med ?",
+          "dateOfCreation": "08/12/2025",
+          "accountId": 1,
+          "chatId": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dev Development",
+      "dateOfCreation": "09/12/2025",
+      "accountId": 3,
+      "messages": [
+        {
+          "id": 6,
+          "text": "Har du set den nye API changelog?",
+          "dateOfCreation": "09/12/2025",
+          "accountId": 3,
+          "chatId": 4
+        },
+        {
+          "id": 7,
+          "text": "Ja, vi skal opdatere vores endpoints.",
+          "dateOfCreation": "10/12/2025",
+          "accountId": 3,
+          "chatId": 4
+        },
+        {
+          "id": 8,
+          "text": "Okay, jeg kigger på det.",
+          "dateOfCreation": "10/12/2025",
+          "accountId": 3,
+          "chatId": 4
+        }
+      ]
+    }
+  ]
+}

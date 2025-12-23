@@ -1,0 +1,368 @@
+.chatroom-wrapper {
+    display: grid;
+    height: 100%;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    margin: 20px 20px;
+}
+
+.chatroom-wrapper .wrapper {
+    width: 100%;
+}
+
+.chatroom-wrapper .wrapper h1 {
+    text-align: left;
+    transform: translateX(35px)
+}
+
+.chatroom-wrapper .wrapper i {
+    position: absolute;
+    font-size: 37px;
+    left: 36px;
+    transform: translateY(-36px);
+} 
+
+.account-info p {
+    text-align: center;
+    transform: translateY(10px);
+    color: #fff;
+    font-size: 24px;
+}
+
+.wrapper .scroll-container {
+    display: grid;
+    margin-top: 20px;
+    overflow-y: scroll;
+    max-height: 380px;
+    padding: 0 5px;
+    gap: 10px;
+}
+
+.scroll-container .not-selected {
+    width: 100%;
+    height: 90px;
+    padding: 16px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .selected{
+    width: 100%;
+    height: 90px;
+    padding: 16px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    transform: scale(1.01);
+}
+
+.scroll-container .chat-name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.scroll-container .chat-message-count {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+i#edit-chat {
+    position: relative;
+    transform: translateX(455px) translateY(-42px); 
+    color: white;
+    opacity: 0.75;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+i#edit-chat:hover {
+    opacity: 1;
+}
+
+i#delete-chat {
+    position: relative;
+    transform: translateX(460px) translateY(-42px); 
+    color: #ff4d4f;
+    opacity: 0.75;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+i#delete-chat:hover {
+    opacity: 1;
+}
+
+i#create-chat {
+    position: absolute;
+    background: #9333EA;
+    transform: translateX(564px) translateY(-41px); 
+    border-radius: 10px;
+    color: white;
+    opacity: 0.75;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 3px 3px;
+}
+
+i#create-chat:hover {
+    opacity: 1;
+}
+
+p#account-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+p#account-user-level {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+p#account-guide {
+    opacity: 0.8;
+    font-size: 20px;
+    text-align: center;
+    transform: translateY(150px)
+}
+
+h1#account-info {
+    transform: none
+}
+
+h1#chat-info {
+    transform: none
+}
+
+p#chat-guide {
+    opacity: 0.8;
+    font-size: 20px;
+    text-align: center;
+    transform: translateY(150px)
+}
+
+h1#chat-info {
+    transform: none
+}
+
+/* alt css kode pånær transform for log-out button er ai generated for at se hvor godt den kan gøre det
+*/
+.log-out .submit-btn {
+    background: linear-gradient(135deg, #a855f7, #7c3aed);
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 24px;
+    cursor: pointer;
+
+    transform: translateX(659px) translateY(13px);
+    opacity: 0.95;
+
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.35);
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.log-out .submit-btn:hover {
+    opacity: 1;
+    box-shadow: 0 10px 22px rgba(124, 58, 237, 0.45);
+}
+
+.log-out .submit-btn:active {
+    box-shadow: 0 4px 10px rgba(124, 58, 237, 0.35);
+}
+
+.scroll-container .account-details {
+    display: grid;
+    grid-template-areas: "h2 ."
+                         "id idValue"
+                         "name nameValue"
+                         "created createdValue"
+                         "userlevel userlevelValue";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+    height: 180px;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .account-owned-chats {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .account-message-statistics {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .account-latest-messages {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.account-details .lbl {
+    opacity: 0.8;
+}
+
+.account-details h2#details {
+    grid-area: h2;
+}
+
+.account-details p#idLbl {
+    grid-area: id;
+}
+
+.account-details p#nameLbl {
+    grid-area: name;
+}
+
+.account-details p#createdLbl {
+    grid-area: created;
+}
+
+.account-details p#userlevelLbl {
+    grid-area: userlevel;
+}
+
+.account-details .value {
+    text-align: right;
+}
+
+.account-details p#idValue {
+    grid-area: idValue;
+}
+
+.account-details p#nameValue {
+    grid-area: nameValue;
+}
+
+.account-details p#createdValue {
+    grid-area: createdValue;
+}
+
+.account-details p#userlevelValue {
+    grid-area: userlevelValue;
+}
+
+.scroll-container .show-chat {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .account-message-statistics p#account-message-count {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.scroll-container .account-message-statistics p#account-message-text {
+    text-align: center;
+    font-size: 16px;
+}
+
+.scroll-container .message-box{
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .message-box-current-user{
+    display: grid;
+    gap: 5px;
+    transform: translateX(115px);
+    width: 80%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .message-box-user{
+    display: grid;
+    gap: 5px;
+    width: 80%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.scroll-container .write-box-user{
+    width: 70%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+p#message-text {
+    white-space-collapse: preserve-breaks;
+}
+
+input#write-message {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: lightgray;
+}
+
+input#write-message::placeholder {
+    font-size: 18px;
+    color: lightgray;
+}
+
+#send-message {
+    background-color:#9333EA;
+    width: 28%;
+    transform: translateX(415px) translateY(-66px);
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+#send-message-icon {
+    transform: translateX(-20px) translateY(-2px); 
+    font-size: 30px;
+}
+
+#send-message-text {
+    font-size: 22px;
+    transform: translateX(32px) 
+}
+
+
+
+
+
+
+
+
